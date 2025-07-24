@@ -22,7 +22,8 @@ const o3={...o1,...o2}
 // console.log(o3)
 
 // console.log(Object.keys(tinderUser))
-// console.log(Object.values(tinderUser))
+console.log(Object.values(tinderUser))
+console.log(Object.entries(tinderUser))
 
 let course={
     course_name:"javaScript",
@@ -32,5 +33,5 @@ let course={
 
 // console.log(course.course_instructor)
 
-const {course_instructor:instructor} =course
-console.log(instructor)
+// const {course_instructor:instructor} =course
+// console.log(instructor)
