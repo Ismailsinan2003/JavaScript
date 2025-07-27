@@ -1,6 +1,6 @@
 //  foreach loop
 
-let movie=["saiyaara", "PK", "Kick"]
+// let movie=["saiyaara", "PK", "Kick"]
 
 // movie.forEach( function (i) {
 //     console.log(i)
@@ -48,3 +48,9 @@ let movie=["saiyaara", "PK", "Kick"]
 // mycoding.forEach( (item) => {
 //     console.log(item.lang)
 // })
+
+// let movie=["saiyaara", "PK", "Kick"]
+// let a=movie.forEach( (item) =>{
+//     return item
+// })
+// console.log(a)  undeined
