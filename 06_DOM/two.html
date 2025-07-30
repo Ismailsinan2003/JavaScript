@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
 </head>
-<body>
+<body style="background-color:rgb(72, 71, 71); color:white;">
     <div class="parent">
         <div class="day">Monday
             <!-- hello -->
@@ -22,11 +22,13 @@
 <script>
     const parent = document.querySelector('.parent')
     // console.log(parent)
-    // //  console.log(parent.children)
-    // // console.log(parent[0])
+    //  console.log(parent.children)
+    //  console.log(parent.firstElementChild)
+    console.log(parent.childNodes)
+    
 
     const  new_parent=Array.from(parent.children)
-    console.log(new_parent[0].children)
+    // console.log(new_parent[0].children)
 
     // for (let i = 0; i < new_parent.length; i++) {
     //     console.log(new_parent[i].innerHTML)
@@ -38,11 +40,12 @@
     // console.log(parent.lastElementChild)    //getting child from parent elements
 
     const child=document.querySelector('.day')
+    console.log(child.childNodes)
     // console.log(child)
     // console.log(child.parentElement)      //getting parent from child elements
     // console.log(child.nextElementSibling) 
 
-    // console.log(parent.childNodes)
+    
 
     const a=Array.from(parent.childNodes)
     // console.log(a[0])
