@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(67, 66, 66); color: white;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function AddLanguages(LangName) {
+        const li=document.createElement('li')
+        li.innerText=`${LangName}`
+        // li.appendChild(document.createTextNode(LangName))  // use this type for code optimization
+        document.querySelector('.language').appendChild(li)
+
+    }
+    AddLanguages("Python")
+    AddLanguages("java")
+
+    // EDIT
+
+    const secondLang=document.querySelector('li:nth-child(2)')
+    // secondLang.innerHTML="rust"
+    const newli=document.createElement('li')
+    newli.textContent="rust"
+    // newli.appendChild(document.createTextNode("rust"))
+    secondLang.replaceWith(newli)
+
+    //delete
+
+    const lastlang=document.querySelector('li:last-child')
+    // lastlang.remove()
+</script>
+
+</html>
