@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="myInput" placeholder="Type something..." />
+
+    <script>
+        document.getElementById("myInput").addEventListener("keydown", function (e) {
+            console.log("Key down:", e.key);
+        });
+
+        document.getElementById("myInput").addEventListener("keyup", function (e) {
+            console.log("Key released:", e.key);
+        });
+    </script>
+
+</body>
+
+</html>
+
+
+Keyboard events basically there are only two main keyboard events
+
+=> keydown, in consolelog it reuturns the pressed key
+=> keyup, in consolelog it return the key after pressing and releasing

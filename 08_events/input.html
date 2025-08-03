@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="username" placeholder="Enter username" />
+    <p id="msg" style="color:red;"></p>
+
+    <script>
+        const username = document.getElementById("username");
+        const msg = document.getElementById("msg");
+
+        username.addEventListener("blur", () => {
+            if (username.value.trim() === "") {
+                msg.textContent = "Username cannot be empty!";
+            } else {
+                msg.textContent = "";
+            }
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+input/form events
+
+=> input, live input value tracking
+=> change, when live input value is changed
+=> focus, when element gain focus
+=> submit, when form is submitted
+=> reset, when the form reset button is clicked

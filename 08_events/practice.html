@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="track" style="width:100%;height:150px;background:#ccc;"></div>
+
+    <script>
+        document.getElementById("track").addEventListener("mousemove", (e) => {
+            console.log(`Mouse X: ${e.clientX}, Y: ${e.clientY}`);
+        });
+    </script>
+
+
+</body>
+
+</html>
+
+
+Mouse Events
+    => click, fires when user (left-click) on an element
+    => dblclick, fires when user double clicks an element
+    => Mousedown, fires when mouse button is pressed down in the sense clicking and holding. Mouseup, fires when mouse button is released after holding for a while
+    =>Mouseenter, it fires when the mouse is kept on top of the element similar to hover. Mouseleave, it fires when you leave the box
+    
