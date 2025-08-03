@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 50vh;
+            width: 50vw;
+            border: 2px solid white;
+            margin: 150px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .photo{
+            height: 200px;
+            width: 200px;
+            border: 2px solid white;
+            margin: 20px 0 0 40px;
+        }
+        .followers{
+            height: 100px;
+            width: 150px;
+            border: 2px solid white;
+            margin: 0 0 0 70px;
+        }
+        
+    </style>
+</head>
+<body style="background-color: black; color: azure;">
+        <div class="container">
+            <div class="photo"></div>
+            <div class="followers"></div>
+        </div>
+<script>
+    // let user_img;
+    const url="https://api.github.com/users/hiteshchoudhary"
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', url)
+    xhr.onreadystatechange=function (){
+        if(xhr.readyState===4){
+            let data =JSON.parse(this.responseText)
+            let follower_s=data.followers
+            let photo_url=data.avatar_url
+            
+            
+            const photo=document.querySelector('.photo')
+            photo.innerHTML=`<img src=${photo_url} width="200px"></img>`
+
+            const followers=document.querySelector('.followers')
+            followers.innerHTML=`<h3 style="text-align:center;">Followers</h3><h4 style="text-align:center;">${follower_s}</h4>`
+            
+        }
+    }
+    xhr.send()
+    
+
+    // const photo =document.querySelector('.photo')
+    // photo.innerHTML=`<img src=${avatar_url}></img>`
+    
+    
+    
+</script>
+    
+</body>
+</html>
