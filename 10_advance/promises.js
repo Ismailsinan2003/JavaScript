@@ -93,13 +93,18 @@
 // getAllUser()
 
 fetch("https://jsonplaceholder.typicode.com/users")
+
+
 .then( (response) =>{
     return response.json()
-}).then( (data)=>{
+})
+.then( (data)=>{
     console.log(data)
-}).catch( (error)=>{
+})
+.catch( (error)=>{
     console.log(error, "oops something went wrong")
-}).finally( ()=>{
+})
+.finally( ()=>{
     console.log("the fetch is either resolved or failed")
 })
 
