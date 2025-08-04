@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h1>hello world</h1>
+</body>
+<script>
+    const URL ="https://randomuser.me/api/"
+    const req=new XMLHttpRequest()
+    req.open('GET', URL)
+    req.onreadystatechange= function (){
+        if(req.readyState==4){
+        const data = JSON.parse(this.responseText)
+        console.log(data)
+        console.log(data.results[0].location.street.name)
+    }}
+
+    req.send()
+</script>
+</html>
