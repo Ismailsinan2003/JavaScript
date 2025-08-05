@@ -1,0 +1,24 @@
+/* Default light theme */
+body.light-theme {
+  background-color: #f5f5f5;
+  color: #111;
+}
+
+/* Dark theme */
+body.dark-theme {
+  background-color: #111;
+  color: #f5f5f5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
