@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Counter</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    textarea {
+      width: 300px;
+      height: 100px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .counter {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .limit-exceeded {
+      color: red;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    button:disabled {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body style="background-color: black; color: white;">
+
+  <h2>Type your message:</h2>
+  <textarea id="messageBox" placeholder="Type here..."></textarea>
+  <div class="counter" id="charCount">0 / 100</div>
+
+  <button id="submitBtn" disabled>Submit</button>
+<script src="script.js"></script>
+</body>
+</html>

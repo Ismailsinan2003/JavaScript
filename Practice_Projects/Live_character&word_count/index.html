@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Word & Character Counter</title>
+  <style>
+    body {
+      background-color: #222;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 50px;
+      text-align: center;
+    }
+
+    textarea {
+      width: 80%;
+      max-width: 500px;
+      height: 150px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: none;
+      resize: none;
+      outline: none;
+    }
+
+    #statusLine {
+      margin: 15px 0;
+      font-size: 18px;
+    }
+
+    button {
+      padding: 10px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #00aaff;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      background-color: #555;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Live Word & Character Counter</h2>
+  
+  <textarea id="contentBox" placeholder="Start typing..."></textarea>
+  
+  <p id="statusLine">0 characters | 0 words</p>
+  
+  <button id="submitBtn" disabled>Submit</button>
+<script src="script.js"></script>
+</body>
+</html>
